@@ -107,7 +107,7 @@ while True:
                 current_price = get_current_price(post_ticker[1])
                 check = check_vol(post_ticker[1])
                 print('바뀌기 전...'+str(pre_ticker[1]))
-                if check[1]>check[0]:
+                if check[1]>check[0]+0.5:
                     bot.sendMessage(ID, str(pre_check_time.strftime('%d/%b, %H:%M:%S')) + '\n'
                                         + "pre_ticker:" + str(pre_ticker[1]) + '\n'
                                         + str(post_check_time.strftime('%d/%b, %H:%M:%S')) + '\n'
